@@ -1,6 +1,6 @@
 specVersion: 0.0.2
 schema:
-  file: ./schema.graphql
+  file: schema.graphql
 dataSources:
   - kind: near
     name: blocks
@@ -8,7 +8,6 @@ dataSources:
     source:
       account: geetaagrawal.testnet
       startBlock: 80000000
-      
     mapping:
       apiVersion: 0.0.5
       language: wasm/assemblyscript
@@ -17,11 +16,8 @@ dataSources:
         - ExecutionOutcome
         - FunctionCallActionEvent
         - BlockEvent
-
       receiptHandlers:
         - handler: handleReceipt
       blockHandlers:
         - handler: handleBlock
-      
-      
-      file: ./src/mapping.ts
+      file: blocks/blocks.wasm
