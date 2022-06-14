@@ -6,7 +6,7 @@ dataSources:
     name: blocks
     network: near-testnet
     source:
-      account: geetaagrawal.testnet
+      account: geetaa.testnet
       startBlock: 80000000
       
     mapping:
